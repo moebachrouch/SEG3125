@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+}
+
+.header, .links, .footer {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+}

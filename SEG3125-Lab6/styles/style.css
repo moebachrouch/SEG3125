@@ -1,0 +1,86 @@
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding-top: 70px;
+}
+
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  background-color: #2B2A33;
+}
+
+h2,
+h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #345dce;
+}
+
+em {
+  font-size: 25px;
+  font-style: normal;
+  color: #44BAEC;
+  font-family: 'Cinzel', serif;
+}
+
+.address {
+  color: #CE3481;
+}
+
+strong {
+  color: #da5252;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.card-title {
+  color: #345dce;
+}
+
+h2 {
+  color: #CE3481;
+}
+
+.aboutUs {
+  font-size: 18px;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #CE3481;
+}
+
+.university {
+  font-weight: bolder;
+}
+
+.navbar {
+  background-color: #2b2b2b;
+  background-image: none;
+  background-repeat: no-repeat;
+}
+
+.ui-tooltip-content {
+  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.color-here {
+  border-radius: 5px;
+}
+
+.option {
+  background-color: white;
+}

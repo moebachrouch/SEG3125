@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- use of external CSS -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Metro Boomin Market</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Newsreader:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Metro Boomin Market</h1>
+        </div>
+
+        <!-- Tab links, each one with an onclick event associated with it -->
+        <div class="tab">
+            <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'customer')">Customer</button>
+            <button class="tablinks" onclick="openTab(event, 'products')">Products</button>
+            <button class="tablinks" onclick="openTab(event, 'cart')">Shopping Cart</button>
+        </div>
+
+        <!-- A personal data entry area -->
+        <div id="customer" class="tabcontent">
+            <h3>Customer Information</h3>
+            <p>To help us better satisfy your needs, we would like to know your dietary preferences.</p>
+
+            <p>Do you have any of the following dietary restrictions or preferences?</p>
+            <div class="restrictionsCheckboxes" id="restrictionsCheckboxes" name="restrictionsCheckboxes"
+                onchange="restrictProductChoices()">
+                <div class="choiceBox">
+                    <input type="checkbox" id="lactoseIntolerant" name="restriction">
+                    <label for="lactoseIntolerant">Lactose-intolerant</label>
+                </div>
+
+                <div class="choiceBox">
+                    <input type="checkbox" id="nutAllergies" name="restriction">
+                    <label for="nutAllergies">Allergic to nuts</label>
+                </div>
+
+                <div class="choiceBox">
+                    <input type="checkbox" id="organic" name="restriction">
+                    <label for="organic">Prefer Organic</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- An area for choosing items -->
+        <div id="products" class="tabcontent">
+            <h3>Your Targeted Products</h3>
+            <p>Based on your dietary restrictions and preferences, we preselected products which better suit you.</p>
+            <p>Which of these items would you like to order?</p>
+            <p>Please select one or more items:</p>
+
+            <!-- display products here -->
+            <div id="displayProduct">
+            </div>
+
+            <p>Click the button below to add the selected items to your cart:</p>
+            <div class="addToCart">
+                <button class="addToCartBtn" id="addCart" type="button" class="block" onclick="selectedItems()">Add
+                    items
+                    to cart</button>
+            </div>
+        </div>
+
+        <!-- An area giving the basket view -->
+        <div id="cart" class="tabcontent">
+            <h3>Your Shopping Cart</h3>
+            <!-- display cart here -->
+            <div id="displayCart"></div>
+
+            <div id="totalAmount"></div>
+        </div>
+
+        <!-- Signature in footer -->
+        <div class="footer">
+            <p>Website designed by Metro Boomin - 2021</p>
+        </div>
+    </div>
+
+
+    <!-- use of JavaScript (separate files) to contain the script associated with the site -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/groceries.js"></script>
+</body>
+
+</html>

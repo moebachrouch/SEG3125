@@ -1,0 +1,56 @@
+version: "2.0"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+  - greet
+  - inform
+  - subscribe
+  - thank_you
+  - goodbye
+actions:
+  - "..."
+  - utter_greet
+  - utter_subscribed
+  - utter_thank_you
+  - utter_goodbye
+slots:
+  email:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+    - text: |
+        Hello! How can I help you?
+    - text: |
+        Hi!
+  utter_ask_email:
+    - text: |
+        What is your email address?
+  utter_subscribed:
+    - text: |
+        Check your inbox at {email} in order to finish subscribing to the newsletter!
+    - text: You're all set! Check your inbox at {email} to confirm your subscription.
+  utter_thank_you:
+    - text: |
+        Thanks for coming!
+    - text: |
+        No problem, take care!
+    - text: |
+        Glad I could help!
+    - text: |
+        My pleasure!
+  utter_goodbye:
+    - text: |
+        Goodbye!
+    - text: |
+        Take it easy!
+    - text: |
+        Have a great day!
+    - text: |
+        Bye!
+forms:
+  newsletter_form:
+    required_slots:
+      email:
+        - type: from_text

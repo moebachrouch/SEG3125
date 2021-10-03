@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Newsreader:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Online Survey</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1><span class="span">BEATSTARS</span> SURVEY</h1>
+        <hr>
+    </div>
+
+    <div class="body">
+        <div class="steps">
+            <div class="step">
+                <div class="heading">
+                    <h2><span class="number">01</span>&emsp;BEATSTARS WEBSITE</h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="text">Please visit the BeatStars website by <a href="https://www.beatstars.com/"
+                            target="_blank">clicking
+                            here</a>, or by clicking on the website's preview image below. Clicking each link will open
+                        a
+                        new tab in your browser.</p>
+                </div>
+                <div class="website-image-div">
+                    <div>
+                        <a href="https://www.beatstars.com/" target="_blank"><img class="website-image"
+                                src="images/beatstars-ui-screenshot.png" alt="BeatStars"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="heading">
+                    <h2><span class="number">02</span>&emsp;QUESTIONNAIRE</h2>
+                </div>
+            </div>
+            <div>
+                <p class="text">We would like your opinion on the look and feel of the BeatStars website. Please answer
+                    the following
+                    questions.</p>
+            </div>
+
+            <div class="questionnaire">
+                <form name="ui-evaluation">
+
+                    <div>
+                        <div>
+                            <p class="text">Q1 | Go to the "Start Selling" button on the top right of the BeatStars
+                                website. Do you believe that this feature is implemented efficiently?</p>
+                        </div>
+                        <div class="radios">
+                            <div class="radio">
+                                <input type="radio" id="yes" name="darkmode" value="yes"> <label for="yes">Yes, it is
+                                    implemented efficiently</label><br>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="no" name="darkmode" value="no"> <label for="no">No, starting to
+                                    sell
+                                    beats requires
+                                    too many steps</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <p class="text">Q2 | Pay attention to the background colour theme of the BeatStars website.
+                                If you could
+                                pick the background colour theme, how would you do it?</p>
+                        </div>
+                        <div class="custom-select">
+                            <select name="colour-theme" id="colour-theme">
+                                <option value="" selected>[Click here to select an option]</option>
+                                <option value="light">I would change it to Light Mode</option>
+                                <option value="dark">I would keep the Dark Mode</option>
+                                <option value="toggle">I would add a Dark & Light mode toggle button</option>
+                                <option value="other">I would pick an entirely different background colour
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="prompt">
+                            <p class="text">Q3 | Which colours pop out the most on the BeatStars website at first
+                                glance?
+                                Please
+                                select all that
+                                apply.</p>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="blue" name="coloration" value="blue"> <label
+                                for="blue">Blue</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="red" name="coloration" value="red"> <label for="red">Red</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="yellow" name="coloration" value="yellow"> <label
+                                for="yellow">Yellow</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="black" name="coloration" value="black"> <label
+                                for="black">Black</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="white" name="coloration" value="white"> <label
+                                for="white">White</label>
+                        </div>
+                    </div>
+
+                    <div class="contact">
+                        <p class="text">Q4 | From the beats that you saw on the BeatStars website, which one was your
+                            favourite?
+                        </p>
+                        <p class="text">Beat name: <input type="text" name="beatname"></p>
+                        <p class="text">Beat genre: <input type="text" name="beatgenre"></p>
+                    </div>
+
+                    <div>
+                        <div>
+                            <p class="text">Q5 | Please add your comments below to share your opinions about the
+                                BeatStars
+                                website.</p>
+                        </div>
+                        <div>
+                            <textarea rows="5" cols="30"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="heading">
+                    <h2><span class="number">03</span>&emsp;SUBMISSION</h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="text">Thank you for completing our survey. Please submit your questionnaire by clicking on
+                        the "SUBMIT"
+                        button below.</p>
+                </div>
+                <div class="submit-div">
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Website designed by Metro Boomin - 2021</p>
+    </div>
+</body>
+
+</html>
+
+<!-- MB -->

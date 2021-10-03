@@ -1,0 +1,259 @@
+body {
+  /* font-family: sans-serif; */
+  font-family: "Sen", sans-serif;
+  color: rgb(61, 61, 61);
+  margin-left: 15vw;
+  margin-right: 15vw;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+}
+
+.customerID, .selectedItemsPar {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(173, 0, 0);
+}
+
+.choiceBox {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.tabcontent {
+}
+
+.addProductsButtonsDiv {
+  margin-top: 15px;
+}
+
+.totalPriceFigure,
+.singleProductPrice {
+  font-size: 20px;
+  color: rgb(173, 0, 0);
+}
+
+.totalPriceDiv {
+  border-top: 1px solid black;
+  text-transform: uppercase;
+}
+
+.yourShoppingCartContainsDiv {
+  border-bottom: 1px solid black;
+}
+
+.removeProductButton,
+.addProductButton {
+  font-weight: 500;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 7px 15px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.addProductButton {
+  background-color: rgb(18, 109, 0);
+  margin-left: 4px;
+}
+
+.addProductButton:hover {
+  background-color: rgb(26, 153, 0);
+}
+
+.removeProductButton:hover {
+  background-color: rgb(219, 0, 0);
+}
+
+.removeProductButton {
+  margin-right: 4px;
+  background-color: rgb(173, 0, 0);
+}
+
+h1 {
+  margin-top: 40px;
+  /* text-align: center; */
+  color: rgb(18, 109, 0);
+}
+
+.displayProduct {
+  text-align: center;
+}
+
+.productLabelPriceDiv {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgb(0, 49, 156);
+}
+
+.descriptionDiv {
+  margin-bottom: 4px;
+}
+
+.productDetailsDiv {
+  font-style: italic;
+}
+
+.productCheckboxDiv {
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 325px;
+  border: 1px solid black;
+  margin: 5px 5px 5px 5px;
+}
+
+.priceDiv {
+  font-size: 20px;
+  color: rgb(173, 0, 0);
+  margin-top: 15px;
+}
+
+.displayProduct {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  cursor: pointer;
+  color: rgb(0, 49, 156);
+  text-decoration: underline;
+  transition-duration: 0.2s;
+}
+
+.link:hover {
+  color: rgb(0, 69, 218);
+}
+
+.numberOfElementsInput {
+  font-size: 20px;
+  color: rgb(173, 0, 0);
+  margin-top: 15px;
+}
+
+.addToCart,
+.placeOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addToCartBtn,
+.placeOrderBtn {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(18, 109, 0);
+  font-weight: 700;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 17px;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+}
+
+.plus {
+  background-color: rgb(18, 109, 0);
+}
+
+.minus {
+  background-color: rgb(173, 0, 0);
+}
+
+.plus,
+.minus {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+}
+
+.addToCartBtn:hover,
+.placeOrderBtn:hover {
+  background-color: rgb(26, 153, 0);
+}
+
+.itemDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.removeFromCartBtnDiv {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeFromCartBtn {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(173, 0, 0);
+  font-weight: 700;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.removeFromCartBtn:hover {
+  background-color: rgb(219, 0, 0);
+}
+
+.footer {
+  color: rgb(161, 161, 161);
+  display: flex;
+  justify-content: center;
+}

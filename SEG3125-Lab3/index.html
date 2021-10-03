@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- use of external CSS -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Metro Boomin' Market</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Metro Boomin' Market</h1>
+    </div>
+
+    <div class="container">
+        <!-- Tab links, each one with an onclick event associated with it -->
+        <div class="tab">
+            <div class="breadcrumb">
+                <h2 class="link" id="defaultOpen" class="tablinks" onclick="openTab(event, 'customer')">1 - Personal
+                    Information</h2>
+            </div>
+            <div>
+                <h2>&nbsp;>&nbsp;</h2>
+            </div>
+            <div class="breadcrumb">
+                <h2 class="link" class="tablinks" onclick="openTab(event, 'products')">2 - Pick your Products</h2>
+            </div>
+            <div>
+                <h2>&nbsp;>&nbsp;</h2>
+            </div>
+            <div class="breadcrumb">
+                <h2 class="link" class="tablinks" onclick="openTab(event, 'cart')">3 - View your Shopping Cart</h2>
+            </div>
+        </div>
+
+        <!-- A personal data entry area -->
+        <div id="customer" class="tabcontent">
+            <h3>Step 1/3 - Personal Information</h3>
+            <p>To help us better satisfy your needs, we would like to know your dietary preferences.</p>
+
+            <p>Do you have any of the following dietary restrictions or preferences?</p>
+            <div class="restrictionsCheckboxes" id="restrictionsCheckboxes" name="restrictionsCheckboxes"
+                onchange="restrictProductChoices()">
+                <div class="choiceBox">
+                    <input type="checkbox" id="lactoseIntolerant" name="restriction">
+                    <label for="lactoseIntolerant">I am <span class="customerID">lactose-intolerant</span></label>
+                </div>
+
+                <div class="choiceBox">
+                    <input type="checkbox" id="nutAllergies" name="restriction">
+                    <label for="nutAllergies">I am <span class="customerID">allergic to nuts</span></label>
+                </div>
+
+                <div class="choiceBox">
+                    <input type="checkbox" id="organic" name="restriction">
+                    <label for="organic">I prefer <span class="customerID">organic foods</span></label>
+                </div>
+
+                <div class="choiceBox">
+                    <input type="checkbox" id="halal" name="restriction">
+                    <label for="halal">I only eat <span class="customerID">Halal foods</span></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- An area for choosing items -->
+        <div id="products" class="tabcontent">
+            <h3>Step 2/3 - Pick your Products</h3>
+            <p>Based on your dietary restrictions and preferences, we preselected products which better suit you.</p>
+            <p>Please select one or more items below. Press <span class="plus">+</span> to increase the number of a
+                selected item in your shopping cart,
+                and <span class="minus">-</span> to decrease it.</p>
+            <p class = "selectedItemsPar">Selected items are automatically added to your shopping cart.</p>
+
+            <!-- display products here -->
+            <div class="displayProductWrapper">
+                <div class="displayProduct" id="displayProduct">
+                </div>
+            </div>
+
+            <!-- <p>Click the button below to add the selected items to your cart:</p>
+            <div>
+                <div class="addToCart">
+                    <button class="addToCartBtn" id="addCart" type="button" class="block" onclick="selectedItems()">Add
+                        Selected Items to your Cart</button>
+                </div>
+            </div> -->
+
+        </div>
+
+        <!-- An area giving the basket view -->
+        <div id="cart" class="tabcontent">
+            <h3>Step 3/3 - View your Shopping Cart</h3>
+            <!-- display cart here -->
+            <div id="displayCart"></div>
+
+            <div id="totalAmount"></div>
+
+            <p></p>
+
+            <!-- <div class="placeOrder">
+                <button class="placeOrderBtn" id="addCart" type="button" class="block">Place your Order</button>
+            </div> -->
+        </div>
+
+        <!-- Signature in footer -->
+        <div class="footer">
+            <p>Website designed by Metro Boomin - 2021</p>
+        </div>
+    </div>
+
+
+    <!-- use of JavaScript (separate files) to contain the script associated with the site -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/groceries.js"></script>
+</body>
+
+</html>
+
+<!-- MB ! -->

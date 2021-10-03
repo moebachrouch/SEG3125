@@ -1,0 +1,62 @@
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  background-color: #2B2A33;
+}
+
+h1 {
+  color: #44BAEC;
+  font-family: 'Cinzel', serif;
+}
+
+h2,
+h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #345dce;
+}
+
+em {
+  font-size: 25px;
+  color: #44BAEC;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.address {
+  color: #e6e6e6;
+  font-size: 20px;
+}
+
+strong {
+  color: #da5252;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.card-title {
+  color: #345dce;
+}
+
+h2 {
+  color: #CE3481;
+}
+
+.university {
+  font-weight: bolder;
+}

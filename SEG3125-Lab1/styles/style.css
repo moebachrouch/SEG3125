@@ -1,0 +1,158 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 0 0;
+  color: #d8d8d8;
+  background: rgb(24, 24, 24);
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.body {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.text,
+.p {
+  font-family: "Newsreader", serif;
+  line-height: 1.6;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.header {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+h1 { 
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.span {
+  color: #971010;
+}
+
+.radios {
+
+}
+
+.radio {
+  padding-bottom: 10px;
+}
+
+.checkbox {
+  padding-bottom: 6px;
+}
+
+.number {
+  font-family: "Montserrat", sans-serif;
+  color: #971010;
+}
+
+.questionnaire {
+  padding: 20px 3vw 40px 3vw;
+  border: 1px solid white;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(139, 139, 139);
+}
+
+.steps {
+  margin: 3vw 5vw 3vw 5vw;
+}
+
+.step {
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+
+a {
+  color: #dfdfdf;
+}
+
+.number {
+  padding-right: 14px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.submit-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0051ff;
+  font-weight: 900;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 17px;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+
+.website-image {
+  max-width: 60vw;
+  max-height: auto;
+}
+
+@media (max-width: 700px) {
+  .website-image {
+    max-width: 75vw;
+    max-height: auto;
+  }
+}
+
+.website-image-div {
+  text-align: center;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+/* MB */
